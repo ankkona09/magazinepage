@@ -1,0 +1,775 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: lightcoral;
+}
+
+p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 1.25rem;
+    gap: 0.3rem;
+}
+
+.grid2 {
+    display: grid;
+    width: 92vh;
+    height: 92vh;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    background-color: #FFDEDE;
+    gap: 0.8rem;
+}
+
+.cell7 {
+    grid-row: span 2;
+    width: 21.875rem;
+}
+
+.cell9 {
+    grid-row: span 2;
+    grid-column: span 2;
+}
+
+.cell10 {
+    grid-row: span 2;
+}
+
+.cell11 {
+    grid-column: span 2;
+}
+
+.grid1 {
+    display: grid;
+    width: 92vh;
+    height: 92vh;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 0.8rem;
+    background: linear-gradient(to right, #FFDEDE 48%, white 48%);
+}
+
+.cell1 {
+    grid-column: span 3;
+}
+
+.cell2 {
+    grid-column: span 2;
+    grid-row: span 3;
+    width: 22rem;
+}
+
+.image1 {
+    height: 13.75rem;
+    width: 11.25rem;
+    padding-left: 8.125rem;
+    position: relative;
+
+}
+
+.image2 {
+    height: 15.625rem;
+    width: 15.5rem;
+}
+
+.image3 {
+    height: 15.375rem;
+    width: 15rem;
+    padding-left: 6.875rem;
+    padding-top: 4.375rem;
+}
+
+.image4 {
+    height: 17.25rem;
+    width: 15rem;
+
+}
+
+.image5 {
+    height: 20rem;
+    width: 18.75rem;
+    padding-left: 3.125rem;
+}
+
+.p1 {
+    text-align: left;
+    width: 80%;
+    padding-left: 2.75rem;
+}
+
+.p2 {
+    width: 80%;
+}
+
+.heading3 {
+    padding-left: 2.75rem;
+}
+
+.top {
+    padding-left: 4.6875rem;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.top1 {
+    color: #C38154;
+    font-family: 'Kaushan Script', cursive;
+}
+
+.top2 {
+    padding-left: 7.5rem;
+    font-size: 4.375rem;
+    font-family: 'Kaushan Script', cursive;
+}
+
+.top5 {
+    padding-left: 10.25rem;
+    font-weight: bold;
+    font-size: 3.125rem;
+    font-family: 'Kaushan Script', cursive;
+}
+
+.top3 {
+    padding-left: 6.25rem;
+    font-size: 0.9375rem;
+    font-weight: bold;
+}
+
+.top4 {
+    padding-left: 30.75rem;
+}
+
+@media screen and (max-device-width: 480px) and (orientation: portrait) {
+
+    html,
+    body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: clip;
+    }
+
+
+    /*Mobile*/
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 0.1rem;
+    }
+
+    .top {
+        padding: 20px 0px 20px 0px;
+        font-weight: bold;
+        position: relative;
+        left: 12px;
+        font-size: 12px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    .top1 {
+        color: #C38154;
+        font-family: 'Kaushan Script', cursive;
+    }
+
+    .top2 {
+
+        font-size: 1.8rem;
+        position: relative;
+        right: 90px;
+        margin-top: 150px;
+        font-family: 'Kaushan Script', cursive;
+
+    }
+
+    .top3 {
+
+        font-size: 10px;
+        font-weight: bold;
+        position: relative;
+        left: 110px;
+        bottom: 58px;
+    }
+
+    .top5 {
+
+        font-weight: bold;
+        font-size: 2.2rem;
+        position: relative;
+        right: 136px;
+        padding-bottom: 20px;
+        font-family: 'Kaushan Script', cursive;
+    }
+
+    .top5:after {
+        content: "";
+        position: absolute;
+        left: 35%;
+        bottom: 0;
+        border: 1px solid black;
+        width: 20%;
+    }
+
+
+    .grid1 {
+        display: grid;
+        width: 100%;
+        height: 100vh;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        gap: 0.8rem;
+        background: linear-gradient(to right, #FFDEDE 48%, white 48%);
+    }
+
+    .p1 {
+        text-align: left;
+        width: 44%;
+        padding-left: 10px;
+        font-size: 14px;
+    }
+
+    .p2 {
+        width: 95%;
+        font-size: 14px;
+        position: relative;
+        bottom: 1px;
+        right: 180px;
+        padding-bottom: 10px;
+
+    }
+
+    .image1 {
+        height: 200px;
+        width: 165px;
+        position: relative;
+        right: 130px;
+        padding-top: 25px;
+    }
+
+    .image2 {
+        height: 200px;
+        width: 165px;
+        position: relative;
+        bottom: 25px;
+        right: 185px;
+    }
+
+    .image3 {
+        height: 200px;
+        width: 10rem;
+        padding-left: 6.875rem;
+        padding-top: 4.375rem;
+        position: relative;
+        right: 100px;
+
+    }
+
+    .image4 {
+        height: 190px;
+        width: 10rem;
+        position: relative;
+        right: 180px;
+        top: 120px;
+
+    }
+
+    .image5 {
+        height: 14rem;
+        width: 10.75rem;
+        padding-left: 3.125rem;
+        position: relative;
+        right: 45px;
+        top: 20px;
+    }
+
+    .grid2 {
+        display: grid;
+        width: 100%;
+        height: 100vh;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        background-color: #FFDEDE;
+        gap: 0.8rem;
+    }
+
+    .heading3 {
+        position: relative;
+        right: 35px;
+        padding-bottom: 20px;
+    }
+
+    .h2 {
+        position: relative;
+        right: 181px;
+        top: 20px;
+        font-size: 20px;
+
+    }
+
+    h2 {
+        font-family: 'Kaushan Script', cursive;
+        letter-spacing: 2.5px;
+    }
+
+    p {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        line-height: 1.5;
+    }
+
+    .bags {
+        position: relative;
+        right: 180px;
+        top: 30px;
+
+    }
+
+    .about {
+        position: relative;
+        right: 260px;
+        width: 165px;
+        top: 110px;
+        font-size: 14px;
+    }
+
+    .shoes {
+        position: relative;
+        right: 180px;
+        bottom: 50px;
+
+    }
+
+    .aboutshoes {
+        width: 155px;
+        position: relative;
+        right: 180px;
+        bottom: 30px;
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 471px) and (max-width: 1299px) {
+
+    html,
+    body {
+        overflow-x: clip;
+    }
+
+    body {
+        background-color: lightcoral;
+    }
+
+    p {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 1.25rem;
+        gap: 0rem;
+    }
+
+    .grid2 {
+        display: grid;
+        width: 700px;
+        height: 800px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        background-color: #FFDEDE;
+        gap: 0.8rem;
+        position: relative;
+        left: 20px;
+        top: 1px;
+    }
+
+    .grid1 {
+        display: grid;
+        position: relative;
+        left: 20px;
+        width: 700px;
+        height: 800px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        gap: 0.8rem;
+        background: linear-gradient(to right, #FFDEDE 48%, white 48%);
+    }
+
+    .cell7 {
+        grid-row: span 2;
+        width: 21.875rem;
+    }
+
+    .cell9 {
+        grid-row: span 2;
+        grid-column: span 2;
+    }
+
+    .cell10 {
+        grid-row: span 2;
+    }
+
+    .cell11 {
+        grid-column: span 2;
+    }
+
+
+
+    .cell1 {
+        grid-column: span 3;
+    }
+
+    .cell2 {
+        grid-column: span 2;
+        grid-row: span 3;
+        width: 22rem;
+    }
+
+    .image1 {
+        height: 13.75rem;
+        width: 11.25rem;
+        padding-top: 15px;
+
+    }
+
+    .image2 {
+        height: 14.625rem;
+        width: 14.5rem;
+        position: relative;
+        right: 110px;
+    }
+
+    .image3 {
+        height: 16.375rem;
+        width: 15rem;
+        padding-left: 6.875rem;
+        padding-top: 4.375rem;
+    }
+
+    .image4 {
+        height: 17.25rem;
+        width: 15rem;
+        position: relative;
+        top: 60px;
+
+    }
+
+    .image5 {
+        height: 20rem;
+        width: 18.75rem;
+        padding-left: 3.125rem;
+    }
+
+    .p1 {
+        text-align: left;
+        width: 60%;
+        padding-left: 2.75rem;
+    }
+
+    .p2 {
+        width: 100%;
+        position: relative;
+        right: 110px;
+        bottom: 24px;
+    }
+
+    .heading3 {
+        padding-bottom: 15px;
+    }
+
+    .h2 {
+        position: relative;
+        right: 110px;
+    }
+
+    .top {
+        padding-left: 4.6875rem;
+        font-weight: bold;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        position: relative;
+        right: 35px;
+        padding-top: 20px;
+    }
+
+    .top1 {
+        color: #C38154;
+        font-family: 'Kaushan Script', cursive;
+        position: relative;
+
+    }
+
+    .top2 {
+        font-size: 3rem;
+        font-family: 'Kaushan Script', cursive;
+        position: relative;
+        top: 20px;
+    }
+
+    .top5 {
+
+        font-weight: bold;
+        font-size: 3.5rem;
+        position: relative;
+        right: 56px;
+        top: 10px;
+        padding-bottom: 25px;
+        font-family: 'Kaushan Script', cursive;
+    }
+
+    .top5:after {
+        content: "";
+        position: absolute;
+        left: 32%;
+        bottom: 0;
+        border: 1px solid black;
+        width: 20%;
+    }
+
+    .top3 {
+        font-size: 0.9375rem;
+        font-weight: bold;
+        position: relative;
+        bottom: 60px;
+        left: 350px;
+    }
+
+    .top4 {
+        padding-left: 30.75rem;
+    }
+
+    .bags {
+        position: relative;
+        top: 68px;
+        width: 200px;
+    }
+
+    .about {
+        width: 280px;
+        position: relative;
+        top: 120px;
+        right: 210px
+    }
+
+    .shoes {
+        padding-bottom: 20px;
+    }
+
+    .aboutshoes {
+        width: 280px;
+    }
+}
+
+@media (min-width: 1300px) and (max-width: 1536px) {
+
+    /*Laptop*/
+    html,
+    body {
+        overflow: clip;
+    }
+
+    body {
+        background-color: lightcoral;
+    }
+
+    p {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 1.25rem;
+        gap: 0rem;
+    }
+
+    .grid2 {
+        display: grid;
+        width: 92vh;
+        height: 92vh;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        background-color: #FFDEDE;
+        gap: 0.8rem;
+    }
+
+    .cell7 {
+        grid-row: span 2;
+        width: 21.875rem;
+    }
+
+    .cell9 {
+        grid-row: span 2;
+        grid-column: span 2;
+    }
+
+    .cell10 {
+        grid-row: span 2;
+    }
+
+    .cell11 {
+        grid-column: span 2;
+    }
+
+    .grid1 {
+        display: grid;
+        width: 92vh;
+        height: 92vh;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        gap: 0.8rem;
+        background: linear-gradient(to right, #FFDEDE 48%, white 48%);
+    }
+
+    .cell1 {
+        grid-column: span 3;
+    }
+
+    .cell2 {
+        grid-column: span 2;
+        grid-row: span 3;
+        width: 22rem;
+    }
+
+    .image1 {
+        height: 13.75rem;
+        width: 11.25rem;
+        padding-top: 15px;
+
+    }
+
+    .image2 {
+        height: 14.625rem;
+        width: 14.5rem;
+        position: relative;
+        right: 110px;
+    }
+
+    .image3 {
+        height: 16.375rem;
+        width: 15rem;
+        padding-left: 6.875rem;
+        padding-top: 4.375rem;
+    }
+
+    .image4 {
+        height: 17.25rem;
+        width: 15rem;
+        position: relative;
+        top: 60px;
+
+    }
+
+    .image5 {
+        height: 20rem;
+        width: 18.75rem;
+        padding-left: 3.125rem;
+    }
+
+    .p1 {
+        text-align: left;
+        width: 60%;
+        padding-left: 2.75rem;
+    }
+
+    .p2 {
+        width: 100%;
+        position: relative;
+        right: 110px;
+        bottom: 24px;
+    }
+
+    .heading3 {
+        padding-bottom: 15px;
+    }
+
+    .h2 {
+        position: relative;
+        right: 110px;
+    }
+
+    .top {
+        padding-left: 4.6875rem;
+        font-weight: bold;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        position: relative;
+        right: 35px;
+        padding-top: 20px;
+    }
+
+    .top1 {
+        color: #C38154;
+        font-family: 'Kaushan Script', cursive;
+        position: relative;
+
+    }
+
+    .top2 {
+        font-size: 3rem;
+        font-family: 'Kaushan Script', cursive;
+        position: relative;
+        top: 20px;
+    }
+
+    .top5 {
+
+        font-weight: bold;
+        font-size: 3.5rem;
+        position: relative;
+        right: 56px;
+        top: 10px;
+        padding-bottom: 25px;
+        font-family: 'Kaushan Script', cursive;
+    }
+
+    .top5:after {
+        content: "";
+        position: absolute;
+        left: 32%;
+        bottom: 0;
+        border: 1px solid black;
+        width: 20%;
+    }
+
+    .top3 {
+        font-size: 0.9375rem;
+        font-weight: bold;
+        position: relative;
+        bottom: 60px;
+        left: 350px;
+    }
+
+    .top4 {
+        padding-left: 30.75rem;
+    }
+
+    .bags {
+        position: relative;
+        top: 68px;
+        width: 200px;
+    }
+
+    .about {
+        width: 280px;
+        position: relative;
+        top: 120px;
+        right: 210px
+    }
+
+    .shoes {
+        padding-bottom: 20px;
+    }
+
+    .aboutshoes {
+        width: 280px;
+    }
+}
